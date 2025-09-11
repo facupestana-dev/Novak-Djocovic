@@ -95,6 +95,8 @@ body {
     border: 5px solid #fff; /* Un borde blanco opcional */
     margin-top: 20px; /* Espacio encima de la imagen */
     width: 600px;
+    display: flex;
+    margin-left: 12%;
 }
 /* Fade-in para secciones */
 .fade-in {
@@ -144,8 +146,65 @@ body > *:not(#preloader) {
   opacity: 1;
 }
 
-#JOP{
+#JO{
   padding: 3px;
   background-color: #fff;
   border-radius: 15px;
 }
+
+#centrar  {
+    text-align: center;
+}
+
+
+
+/*!ACA MODIFICA*/
+.logo-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    margin: 40px auto;
+    max-width: 500px;
+}
+
+.logo-hover {
+    position: relative;
+    width: 200px; /* ancho del contenedor */
+    height: 200px; /* altura del contenedor */
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.logo-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* ocupa todo el contenedor */
+    height: 100%;
+    object-fit: contain; /* mantiene proporción de imagen */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    padding: 15px;
+    background: #ffff;
+    border-radius: 50px;
+}
+#foto{
+  border-radius: 25px;
+}
+
+.cabra {
+    opacity: 0;
+    transform: scale(1) rotate(-15deg);
+}
+
+.logo-hover:hover .caiman {
+    opacity: 0;
+    transform: scale(1.5) rotate(15deg);
+}
+
+.logo-hover:hover .cabra {
+    opacity: 1;
+    transform: scale(1.5) rotate(0deg);
+}
+
