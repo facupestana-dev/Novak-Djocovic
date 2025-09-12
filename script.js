@@ -32,3 +32,13 @@ window.addEventListener('load', () => {
     }, 500); 
   }, 3000); 
 });
+
+const content = document.querySelector('.content');
+
+content.addEventListener('mouseenter', () => {
+    content.style.overflowY = 'scroll';
+});
+
+content.addEventListener('mouseleave', () => {
+    content.style.overflowY = 'hidden';
+});

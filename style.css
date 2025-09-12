@@ -1,103 +1,138 @@
 body {
-    font-family: cursive;
-    background: #1a1a1a;
-    margin: 0; /* Reseteamos el margen del body */
-    padding: 20px; /* Añadimos un poco de espacio por si la pantalla es muy pequeña */
-    color: #fff;
-     transition: all 0.4s ease;
+  font-family: cursive;
+  background: #1a1a1a;
+  margin: 0;
+  /* Reseteamos el margen del body */
+  padding: 0;
+  /* Añadimos un poco de espacio por si la pantalla es muy pequeña */
+  color: #fff;
+  transition: all 0.4s ease;
+  overflow-x: hidden;
+}
+
+/* Para Chrome, Edge y Safari */
+body::-webkit-scrollbar {
+    display: none;
 }
 
 /* El nuevo contenedor "cuadradito" */
 .container {
-    max-width: 800px; /* Ancho máximo de nuestro contenedor */
-    margin: 20px auto; /* Centra el contenedor horizontalmente y le da margen arriba/abajo */
-    padding: 30px; /* Espacio interno para que el contenido no toque los bordes */
-    background: #2c2c2c; /* Un color de fondo ligeramente más claro */
-    border-radius: 15px; /* Bordes redondeados para un look más suave */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para darle profundidad */
-    text-align: center; /* Centramos todo el texto dentro del contenedor */
+  max-width: 800px;
+  /* Ancho máximo de nuestro contenedor */
+  margin: 20px auto;
+  /* Centra el contenedor horizontalmente y le da margen arriba/abajo */
+  padding: 30px;
+  /* Espacio interno para que el contenido no toque los bordes */
+  background: #2c2c2c;
+  /* Un color de fondo ligeramente más claro */
+  border-radius: 15px;
+  /* Bordes redondeados para un look más suave */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  /* Sombra para darle profundidad */
+  text-align: center;
+  /* Centramos todo el texto dentro del contenedor */
 }
 
 #title {
-    margin-top: 0; /* Quitamos el margen superior del título */
-    font-size: 2.5em;
-    text-decoration: wavy underline;
+  margin-top: 0;
+  /* Quitamos el margen superior del título */
+  font-size: 2.5em;
+  text-decoration: wavy underline;
 }
+
 /**/
 #novak {
-    width: 150px; /* Tamaño fijo para la imagen */
-    height: 150px;
-    border-radius: 50%; /* Esto la hace completamente redonda */
-    object-fit: cover; /* Evita que la imagen se deforme */
-    border: 3px solid #fff; /* Un borde blanco opcional */
-    margin-bottom: 20px; /* Espacio debajo de la imagen */
-    /* Las propiedades de abajo ya no son necesarias gracias al text-align:center del contenedor */
-    /* display: flex; */
-    /* margin-left: 45%; */
+  width: 150px;
+  /* Tamaño fijo para la imagen */
+  height: 150px;
+  border-radius: 50%;
+  /* Esto la hace completamente redonda */
+  object-fit: cover;
+  /* Evita que la imagen se deforme */
+  border: 3px solid #fff;
+  /* Un borde blanco opcional */
+  margin-bottom: 20px;
+  /* Espacio debajo de la imagen */
+  /* Las propiedades de abajo ya no son necesarias gracias al text-align:center del contenedor */
+  /* display: flex; */
+  /* margin-left: 45%; */
 }
 
 /* Estilos para mejorar las listas */
 .container ul {
-    list-style-type:circle; /* Quitamos los puntos de la lista */
-    padding: 0; /* Quitamos el espacio por defecto a la izquierda */
-    text-align: left; /* Alineamos el texto de la lista a la izquierda para mejor lectura */
-    display: inline-block; /* Permite que el bloque de lista se centre pero su texto sea izquierdo */
-    margin: 20px 0;
+  list-style-type: circle;
+  /* Quitamos los puntos de la lista */
+  padding: 0;
+  /* Quitamos el espacio por defecto a la izquierda */
+  text-align: left;
+  /* Alineamos el texto de la lista a la izquierda para mejor lectura */
+  display: inline-block;
+  /* Permite que el bloque de lista se centre pero su texto sea izquierdo */
+  margin: 20px 0;
 }
 
 .container ul li {
-    margin-bottom: 10px; /* Espacio entre cada elemento de la lista */
+  margin-bottom: 10px;
+  /* Espacio entre cada elemento de la lista */
 }
 
-.container h2, .container h3 {
-    margin-top: 30px; /* Espacio por encima de los subtítulos */
+.container h2,
+.container h3 {
+  margin-top: 30px;
+  /* Espacio por encima de los subtítulos */
 }
 
-::selection{
-    background:#197cb6;
+::selection {
+  background: #197cb6;
 
 }
 
 #fundacion {
-  background: #fff;  
-  padding: 8px;         
+  background: #fff;
+  padding: 8px;
   transition: background 0.3s ease;
   border-radius: 10px;
 }
 
 #fundacion:hover {
-  background: #197cb6; 
+  background: #197cb6;
 }
 
 
 #fundacion-link {
-    color: #ffffff;
-    font-weight: bold;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 #fundacion-link:hover {
-    color: #197cb6;
-    text-decoration: solid underline blue;
-    font-weight: bold;
+  color: #197cb6;
+  text-decoration: solid underline blue;
+  font-weight: bold;
 }
 
-#NFD{
-    border-radius: 25px;
-    padding: 10px;
-    background: #fff 5px;
+#NFD {
+  border-radius: 25px;
+  padding: 10px;
+  background: #fff 5px;
 }
 
-#raqueta{
-    width: 300px; /* Tamaño fijo para la imagen */
-    height: auto;
-    border-radius: 15px; /* Bordes redondeados */
-    object-fit: cover; /* Evita que la imagen se deforme */
-    border: 5px solid #fff; /* Un borde blanco opcional */
-    margin-top: 20px; /* Espacio encima de la imagen */
-    width: 600px;
-    display: flex;
-    margin-left: 12%;
+#raqueta {
+  width: 300px;
+  /* Tamaño fijo para la imagen */
+  height: auto;
+  border-radius: 15px;
+  /* Bordes redondeados */
+  object-fit: cover;
+  /* Evita que la imagen se deforme */
+  border: 5px solid #fff;
+  /* Un borde blanco opcional */
+  margin-top: 20px;
+  /* Espacio encima de la imagen */
+  width: 600px;
+  display: flex;
+  margin-left: 12%;
 }
+
 /* Fade-in para secciones */
 .fade-in {
   opacity: 0;
@@ -137,74 +172,135 @@ body {
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.6; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
 }
 
 /* Contenido principal visible al terminar la pre-carga */
-body > *:not(#preloader) {
+body>*:not(#preloader) {
   opacity: 1;
 }
 
-#JO{
+#JO {
   padding: 3px;
   background-color: #fff;
   border-radius: 15px;
 }
 
-#centrar  {
-    text-align: center;
+#centrar {
+  text-align: center;
 }
 
 
 
-/*!ACA MODIFICA*/
+
 .logo-section {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    text-align: center;
-    margin: 40px auto;
-    max-width: 500px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 40px auto;
+  max-width: 500px;
 }
 
 .logo-hover {
-    position: relative;
-    width: 200px; /* ancho del contenedor */
-    height: 200px; /* altura del contenedor */
-    margin: 20px auto;
-    cursor: pointer;
+  position: relative;
+  width: 200px;
+  /* ancho del contenedor */
+  height: 200px;
+  /* altura del contenedor */
+  margin: 20px auto;
+  cursor: pointer;
 }
 
 .logo-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; /* ocupa todo el contenedor */
-    height: 100%;
-    object-fit: contain; /* mantiene proporción de imagen */
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-    padding: 15px;
-    background: #ffff;
-    border-radius: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* ocupa todo el contenedor */
+  height: 100%;
+  object-fit: contain;
+  /* mantiene proporción de imagen */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  padding: 15px;
+  background: #ffff;
+  border-radius: 50px;
 }
-#foto{
+
+#foto {
   border-radius: 25px;
 }
 
 .cabra {
-    opacity: 0;
-    transform: scale(1) rotate(-15deg);
+  opacity: 0;
+  transform: scale(1) rotate(-15deg);
 }
 
 .logo-hover:hover .caiman {
-    opacity: 0;
-    transform: scale(1.5) rotate(15deg);
+  opacity: 0;
+  transform: scale(1.5) rotate(15deg);
 }
 
 .logo-hover:hover .cabra {
-    opacity: 1;
-    transform: scale(1.5) rotate(0deg);
+  opacity: 1;
+  transform: scale(1.5) rotate(0deg);
 }
 
+#redes {
+  display: flex;
+  gap: 20px;
+  /* espacio entre los íconos */
+  justify-content: center;
+  /* centrar horizontalmente */
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#redes a {
+  color: #333;
+  /* color de los íconos */
+  transition: transform 0.2s, color 0.2s;
+  ;
+  background: #fff;
+  padding: 10px;
+  border-radius: 25%
+}
+
+
+
+#by {
+  margin-left: 20px;
+}
+
+#github i {
+  color: #333;
+  /* color inicial */
+  transition: transform 0.2s, color 0.2s;
+}
+
+#github:hover i {
+  transform: scale(1.3);
+  color: #197cb6;
+}
+
+#instagram i {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  /* necesario para algunos navegadores */
+  transition: transform 0.2s;
+}
+
+#instagram:hover i {
+  transform: scale(1.3);
+}
